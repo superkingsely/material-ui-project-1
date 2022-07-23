@@ -3,6 +3,7 @@ import { Typography, CssBaseline, AppBar,Toolbar, Container,Grid,Button, Card, C
 import AddAPhotoRoundedIcon from '@mui/icons-material/AddAPhotoRounded';
 
 const App = () => {
+    const cards = [1,2,3,4,5,6,7,8,9,10,11,12]
     return ( 
         <div>
             <CssBaseline/>
@@ -20,7 +21,9 @@ const App = () => {
 
             </AppBar>
             <main>
-                <div style={{backgroundColor:"#eee"}}>
+                <div
+                //  style={{backgroundColor:"#eee"}}
+                >
                     <Container maxWidth='sm' sx={{
                         padding:(theme)=>(theme.spacing(8,0,6)),
                         backgroundColor:(theme)=>(theme.palette.background.paper)
@@ -71,38 +74,41 @@ const App = () => {
                 <container sx={{
                     padding:"20px 0"
                 }}>
-                    <Grid container >
-                        <Grid item>
-                                <Card
+                    <Grid container  spacing={2}>
+                        {cards.map(card=>(
+                           
+                            <Grid item  key={card}  xs={12} sm={6} md={4} lg={3} >
+                            <Card
+                            sx={{
+                                height:'100%',
+                                display:"flex",
+                                flexDirection:'column'
+                            }}>
+                                <CardMedia
                                 sx={{
-                                    height:'100%',
-                                    display:"flex",
-                                    flexDirection:'column'
-                                }}>
-                                    <CardMedia
-                                    sx={{
-                                        paddingTop:"56.25%"
-                                    }}
-                                    image='https://source.unsplash.com/random'
-                                    title='image title'
-                                    />
+                                    paddingTop:"56.25%"
+                                }}
+                                image='https://source.unsplash.com/random'
+                                title='image title'
+                                />
 
-                                    <CardContent sx={{
-                                        flexGrow:1
-                                    }}>
-                                        <Typography variant='h5'>
-                                            Heading
-                                        </Typography>
-                                        <Typography variant='h8'>
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores odio quod natus?
-                                        </Typography>
-                                    </CardContent>
-                                    <CardActions>
-                                        <Button size='small' color='primary'>view</Button>
-                                        <Button size='small' color='primary'>Edit</Button>
-                                    </CardActions>
-                                </Card>
-                        </Grid>
+                                <CardContent sx={{
+                                    flexGrow:1
+                                }}>
+                                    <Typography variant='h5'>
+                                        Heading
+                                    </Typography>
+                                    <Typography variant='h8'>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores odio quod natus?
+                                    </Typography>
+                                </CardContent>
+                                <CardActions>
+                                    <Button size='small' color='primary'>view</Button>
+                                    <Button size='small' color='primary'>Edit</Button>
+                                </CardActions>
+                            </Card>
+                    </Grid>
+                        ))}
 
                     </Grid>
                 </container>
