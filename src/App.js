@@ -114,18 +114,25 @@ const App = () => {
                 </container>
             </main>
             <footer
-            sx={{
-                // backgroundColor:(theme)=>(theme.palette.background.paper),
-                backgroundColor:'blue',
-                padding:'50px 0'
-            }}
+            // style={{backgoundColor:"#eee"}}
             >
+                <Container
+                fluid
+                sx={{
+                    // backgroundColor:(theme)=>(theme.palette.background.paper),
+                //    backgroundColor:'#eee',
+                    padding:'50px 0'
+                }}
+                
+                >
+
                 <Typography variant='h6' align='center'>
                     Footer
                 </Typography>
                 <Typography variant='subtitle1' align='center'>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, ipsam.
                 </Typography>
+                </Container>
             </footer>
         </div>
      );
