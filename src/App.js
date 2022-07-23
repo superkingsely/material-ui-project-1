@@ -1,9 +1,8 @@
 import React from 'react';
-import { Typography, CssBaseline, AppBar,Toolbar, Container,Grid,Button } from '@mui/material';
+import { Typography, CssBaseline, AppBar,Toolbar, Container,Grid,Button, Card, CardMedia, CardContent, CardActions } from '@mui/material';
 import AddAPhotoRoundedIcon from '@mui/icons-material/AddAPhotoRounded';
 
 const App = () => {
-
     return ( 
         <div>
             <CssBaseline/>
@@ -11,7 +10,9 @@ const App = () => {
             <AppBar position='relative'>
                 
                 <Toolbar >
-                    <AddAPhotoRoundedIcon/>
+                    <AddAPhotoRoundedIcon sx={{
+                        marginRight:"15px"
+                    }}/>
                     <Typography variant="h6" >
                         Photo Album
                     </Typography>
@@ -19,8 +20,11 @@ const App = () => {
 
             </AppBar>
             <main>
-                <div>
-                    <Container maxWidth='sm' >
+                <div style={{backgroundColor:"#eee"}}>
+                    <Container maxWidth='sm' sx={{
+                        padding:(theme)=>(theme.spacing(8,0,6)),
+                        backgroundColor:(theme)=>(theme.palette.background.paper)
+                    }} >
                         <Typography
                         variant='h2'
                         align='center'
@@ -39,7 +43,13 @@ const App = () => {
                         </Typography>
 
                         <div>
-                            <Grid container spacing={2} justifyContent='center'>
+                            <Grid
+                             container
+                              spacing={2} justifyContent='center'
+                              sx={{
+                                m:5
+                              }}
+                              >
                                 <Grid item>
                                     <Button variant='contained'
                                     color='primary'
@@ -58,6 +68,44 @@ const App = () => {
                         </div>
                     </Container>
                 </div>
+                <container sx={{
+                    padding:"20px 0"
+                }}>
+                    <Grid container >
+                        <Grid item>
+                                <Card
+                                sx={{
+                                    height:'100%',
+                                    display:"flex",
+                                    flexDirection:'column'
+                                }}>
+                                    <CardMedia
+                                    sx={{
+                                        paddingTop:"56.25%"
+                                    }}
+                                    image='https://source.unsplash.com/random'
+                                    title='image title'
+                                    />
+
+                                    <CardContent sx={{
+                                        flexGrow:1
+                                    }}>
+                                        <Typography variant='h5'>
+                                            Heading
+                                        </Typography>
+                                        <Typography variant='h8'>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores odio quod natus?
+                                        </Typography>
+                                    </CardContent>
+                                    <CardActions>
+                                        <Button size='small' color='primary'>view</Button>
+                                        <Button size='small' color='primary'>Edit</Button>
+                                    </CardActions>
+                                </Card>
+                        </Grid>
+
+                    </Grid>
+                </container>
             </main>
         </div>
      );
