@@ -10,7 +10,10 @@ const App = () => {
 
             <AppBar position='relative'>
                 
-                <Toolbar >
+                <Toolbar 
+                sx={{
+                    backgroundColor:"#40c4ff"
+                }}>
                     <AddAPhotoRoundedIcon sx={{
                         marginRight:"15px"
                     }}/>
@@ -55,14 +58,20 @@ const App = () => {
                               >
                                 <Grid item>
                                     <Button variant='contained'
-                                    color='primary'
+                                    // color='#40c4ff'
+                                    sx={{
+                                        backgroundColor:'#40c4ff'
+                                    }}
                                     >
                                         See my photos
                                     </Button>
                                 </Grid>
                                 <Grid item>
                                     <Button variant='outlined'
-                                    color='primary'
+                                    // color='primary'
+                                    // sx={{
+                                    //     backgroundColor:'#40c4ff'
+                                    // }}
                                     >
                                         Secondary action
                                     </Button>
@@ -114,14 +123,15 @@ const App = () => {
                 </container>
             </main>
             <footer
-            // style={{backgoundColor:"#eee"}}
+            style={{backgroundColor:"#40c4ff"}}
             >
                 <Container
                 fluid
                 sx={{
                     // backgroundColor:(theme)=>(theme.palette.background.paper),
                 //    backgroundColor:'#eee',
-                    padding:'50px 0'
+                    padding:'50px 0',
+                    
                 }}
                 
                 >
