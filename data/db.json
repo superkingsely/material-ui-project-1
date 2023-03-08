@@ -1,0 +1,86 @@
+{
+    "data1": [
+        {
+            "id": "1",
+            "name": "isaac"
+        },
+        {
+            "id": "2",
+            "name": "esther"
+        },
+        {
+            "id": "3",
+            "name": "ele"
+        },
+        {
+            "id": 1677883518753,
+            "name": "elo"
+        },
+        {
+            "id": 1677883538154,
+            "name": "chijokes"
+        },
+        {
+            "id": 1678122903407,
+            "name": "come on"
+        },
+        {
+            "id": 1678124295078,
+            "name": "chi"
+        },
+        {
+            "id": 1678128461071,
+            "name": "hmm"
+        }
+    ],
+    "data2": [
+        {
+            "id": "1",
+            "img": "/img/alexander-jawfox-tBAsD_VnxCY-unsplash.jpg"
+        },
+        {
+            "id": "2",
+            "img": "/img/christin-hume-mfB1B1s4sMc-unsplash.jpg"
+        },
+        {
+            "id": "3",
+            "img": "/img/dev-d2Py_uhXJQo-unsplash.jpg"
+        },
+        {
+            "id": "4",
+            "img": "/img/doug-maloney-B63UmuDkznY-unsplash.jpg"
+        },
+        {
+            "id": "5",
+            "img": "/img/download.png"
+        },
+        {
+            "id": "6",
+            "img": "/img/favpng_naruto-uzumaki-naruto-shippūden-ultimate-ninja-impact-kakashi-hatake-minato-namikaze-nine-tailed-fox.png"
+        },
+        {
+            "id": "7",
+            "img": "/img/format-arw-PXjQaGxi4JA-unsplash.jpg"
+        },
+        {
+            "id": "8",
+            "img": "/img/images (1).jpeg"
+        },
+        {
+            "id": "9",
+            "img": "/img/jackson-sophat-_t-l5FFH8VA-unsplash.jpg"
+        },
+        {
+            "id": "10",
+            "img": "/img/marvin-meyer-SYTO3xs06fU-unsplash.jpg"
+        },
+        {
+            "id": "11",
+            "img": "/img/milad-fakurian-nY14Fs8pxT8-unsplash.jpg"
+        },
+        {
+            "id": "12",
+            "img": "/img/nathan-da-silva-FO7kUmBYVi0-unsplash.jpg"
+        }
+    ]
+}
